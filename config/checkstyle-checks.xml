@@ -950,4 +950,6 @@
 
   </module>
 
+  <module name="com.puppycrawl.tools.checkstyle.GitHubAnnotationCheck"/>
+
 </module>

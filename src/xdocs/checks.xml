@@ -297,6 +297,14 @@
           </tr>
           <tr>
             <td>
+              <a href="checks/githubannotationcheck.html#GitHubAnnotationCheck">
+                GitHubAnnotationCheck
+              </a>
+            </td>
+            <td>Formats Checkstyle violations as GitHub annotations.</td>
+          </tr>
+          <tr>
+            <td>
               <a href="checks/whitespace/emptyforiteratorpad.html#EmptyForIteratorPad">
               EmptyForIteratorPad
               </a>

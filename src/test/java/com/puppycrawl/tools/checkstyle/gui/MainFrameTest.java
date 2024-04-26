@@ -68,8 +68,10 @@ public class MainFrameTest extends AbstractGuiTestSupport {
 
     @AfterEach
     public void tearDown() {
-        Arrays.stream(mainFrame.getOwnedWindows())
-                .forEach(Window::dispose);
+        if (mainFrame != null) {
+            Arrays.stream(mainFrame.getOwnedWindows())
+                    .forEach(Window::dispose);
+        }
     }
 
     @Test

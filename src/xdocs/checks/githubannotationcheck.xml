@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE document PUBLIC "-//Maven/DTD XDOC 2.0//EN" "https://maven.apache.org/xsd/xdoc-2.0.xsd">
+<document>
+  <properties>
+    <title>GitHub Annotation Check</title>
+  </properties>
+  <body>
+    <section name="GitHubAnnotationCheck">
+      <subsection name="Description">
+        <p>
+          The GitHub Annotation Check formats Checkstyle violations as GitHub annotations.
+          This allows the violations to be displayed inline with the diff in GitHub pull requests.
+        </p>
+      </subsection>
+      <subsection name="Properties">
+        <p>
+          This check does not require any properties.
+        </p>
+      </subsection>
+      <subsection name="Examples">
+        <p>
+          Example of GitHub Annotation output for a line with a violation:
+        </p>
+        <source>
+          ::error file=MyClass.java,line=10,col=5::'method def' child has incorrect indentation level 10, expected level should be 4.
+        </source>
+      </subsection>
+      <subsection name="Notes">
+        <p>
+          To use this check, include it in your checkstyle configuration file (e.g., checkstyle-checks.xml).
+        </p>
+      </subsection>
+    </section>
+  </body>
+</document>
