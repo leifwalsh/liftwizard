@@ -37,6 +37,7 @@
         <!-- Checks for headers -->
         <module name="RegexpHeader">
             <property name="headerFile" value="config/java.header"/>
+            <property name="charset" value="UTF-8"/>
         </module>
 
         <!-- Miscellaneous other checks -->
