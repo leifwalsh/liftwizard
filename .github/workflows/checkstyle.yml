@@ -20,5 +20,5 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Run Checkstyle with Maven
-      run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=/home/ubuntu/liftwizard/liftwizard-utility/liftwizard-checkstyle/src/main/resources/checkstyle-configuration-liftwizard-semantics.xml
+      run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=/home/runner/work/liftwizard/liftwizard/liftwizard-utility/liftwizard-checkstyle/src/main/resources/checkstyle-configuration-liftwizard-semantics.xml
       working-directory: .
