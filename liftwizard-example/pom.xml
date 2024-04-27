@@ -584,7 +584,9 @@
                 <configuration>
                     <consoleOutput>true</consoleOutput>
                     <configLocation>../checkstyle.xml</configLocation>
-                    <propertyExpansion>checkstyle.listener=com.puppycrawl.tools.checkstyle.GitHubAuditListener</propertyExpansion>
+                    <listeners>
+                        <listener>com.puppycrawl.tools.checkstyle.GitHubAuditListener</listener>
+                    </listeners>
                 </configuration>
                 <executions>
                     <execution>
