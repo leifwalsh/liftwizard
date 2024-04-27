@@ -32,7 +32,7 @@ jobs:
           exit 1
         fi
     - name: Print absolute path of google_checks.xml
-      run: echo "Absolute path of google_checks.xml: $(realpath google_checks.xml)"
+      run: realpath google_checks.xml
     - name: List contents of .m2 directory
       run: ls -la ~/.m2
     - name: Run Checkstyle with Maven
