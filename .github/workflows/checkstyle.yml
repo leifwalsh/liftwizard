@@ -13,7 +13,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Run Checkstyle
-      run: |
-        wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.36.1/checkstyle-8.36.1-all.jar -O checkstyle.jar
-        java -jar checkstyle.jar -c google_checks.xml .
+    - name: Run Checkstyle with Maven
+      run: mvn -B checkstyle:checkstyle
