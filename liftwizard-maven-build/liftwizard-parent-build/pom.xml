@@ -423,7 +423,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <configLocation>checkstyle-configuration-liftwizard-semantics.xml</configLocation>
-                            <suppressionsLocation>checkstyle-suppressions-liftwizard.xml</suppressionsLocation>
+                            <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                         </configuration>
                         <dependencies>
                             <dependency>
@@ -457,7 +457,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <configLocation>checkstyle-configuration-liftwizard-formatting.xml</configLocation>
-                            <suppressionsLocation>checkstyle-suppressions-liftwizard.xml</suppressionsLocation>
+                            <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                         </configuration>
                         <dependencies>
                             <dependency>
