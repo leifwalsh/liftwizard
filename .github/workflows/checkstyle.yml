@@ -21,4 +21,4 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Run Checkstyle with Maven
       run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=liftwizard-utility/liftwizard-checkstyle/src/main/resources/checkstyle-configuration-liftwizard-semantics.xml
-      working-directory: .
+      working-directory: /home/runner/work/liftwizard/liftwizard
