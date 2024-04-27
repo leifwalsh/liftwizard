@@ -18,8 +18,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>io.liftwizard</groupId>
-        <artifactId>liftwizard-uuid</artifactId>
+        <artifactId>liftwizard-parent-build</artifactId>
         <version>2.1.7-SNAPSHOT</version>
+        <relativePath>../../liftwizard-maven-build/liftwizard-parent-build/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -27,21 +28,32 @@
 
     <name>Liftwizard Config Factory: UUID</name>
 
+    <properties>
+        <jackson.version>2.12.3</jackson.version>
+        <auto-service.version>1.0-rc7</auto-service.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
+            <!-- Version aligned with the project's Jackson version -->
+            <version>${jackson.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-jackson</artifactId>
+            <!-- Version aligned with the project's Dropwizard version -->
+            <version>${dropwizard.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.auto.service</groupId>
             <artifactId>auto-service-annotations</artifactId>
+            <!-- Version aligned with the project's Auto Service version -->
+            <version>${auto-service.version}</version>
         </dependency>
     </dependencies>
 </project>

@@ -27,13 +27,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
         <project.build.outputTimestamp>2024-02-18T19:55:24Z</project.build.outputTimestamp>
-
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
+        <dropwizard.version>2.0.23</dropwizard.version>
     </properties>
 
     <description>Liftwizard is a collection of bundles and add-ons for Dropwizard, the Java framework for writing web services.</description>
@@ -423,7 +422,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <configLocation>checkstyle-configuration-liftwizard-semantics.xml</configLocation>
-                            <suppressionsLocation>checkstyle-suppressions-liftwizard.xml</suppressionsLocation>
+                            <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                         </configuration>
                         <dependencies>
                             <dependency>
@@ -457,7 +456,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <configLocation>checkstyle-configuration-liftwizard-formatting.xml</configLocation>
-                            <suppressionsLocation>checkstyle-suppressions-liftwizard.xml</suppressionsLocation>
+                            <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                         </configuration>
                         <dependencies>
                             <dependency>

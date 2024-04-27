@@ -55,6 +55,9 @@
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
+        <jackson.version>2.12.3</jackson.version>
+        <dropwizard.version>2.0.23</dropwizard.version>
+        <auto-service.version>1.0-rc7</auto-service.version>
     </properties>
 
     <description>Liftwizard is a collection of bundles and add-ons for Dropwizard, the Java framework for writing web services.</description>
@@ -99,6 +102,29 @@
 
     <build>
         <defaultGoal>clean verify</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <configLocation>${project.basedir}/google_checks.xml</configLocation>
+                    <encoding>UTF-8</encoding>
+                    <consoleOutput>true</consoleOutput>
+                    <failsOnError>true</failsOnError>
+                    <linkXRef>false</linkXRef>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
