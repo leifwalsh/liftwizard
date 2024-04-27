@@ -36,5 +36,5 @@ jobs:
     - name: List contents of .m2 directory
       run: ls -la ~/.m2
     - name: Run Checkstyle with Maven
-      run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=${{ github.workspace }}/google_checks.xml
+      run: mvn -B -V checkstyle:check -Dcheckstyle.config.location=google_checks.xml
       working-directory: ${{ github.workspace }}
