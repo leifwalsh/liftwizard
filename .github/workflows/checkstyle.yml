@@ -31,6 +31,10 @@ jobs:
           echo "google_checks.xml does not exist."
           exit 1
         fi
+    - name: Print absolute path of google_checks.xml
+      run: echo "Absolute path of google_checks.xml: $(realpath google_checks.xml)"
+    - name: List contents of .m2 directory
+      run: ls -la ~/.m2
     - name: Run Checkstyle with Maven
       run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=${{ github.workspace }}/google_checks.xml
       working-directory: ${{ github.workspace }}
