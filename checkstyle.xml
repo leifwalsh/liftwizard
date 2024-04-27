@@ -7,6 +7,11 @@
     <module name="LineLength">
         <property name="max" value="80"/>
     </module>
+    <!-- Checks for headers -->
+    <module name="RegexpHeader">
+        <property name="headerFile" value="config/java.header"/>
+        <property name="charset" value="UTF-8"/>
+    </module>
     <module name="TreeWalker">
         <!-- Checks for whitespace -->
         <module name="WhitespaceAround"/>
@@ -33,12 +38,6 @@
         <module name="MemberName"/>
         <module name="MethodName"/>
         <module name="ParameterName"/>
-
-        <!-- Checks for headers -->
-        <module name="RegexpHeader">
-            <property name="headerFile" value="config/java.header"/>
-            <property name="charset" value="UTF-8"/>
-        </module>
 
         <!-- Miscellaneous other checks -->
         <module name="ArrayTypeStyle"/>
