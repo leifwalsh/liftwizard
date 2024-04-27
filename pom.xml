@@ -108,7 +108,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <configLocation>liftwizard-utility/liftwizard-checkstyle/src/main/resources/checkstyle-configuration-liftwizard-semantics.xml</configLocation>
+                    <configLocation>google_checks.xml</configLocation>
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
