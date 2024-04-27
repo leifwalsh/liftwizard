@@ -12,6 +12,8 @@
         <property name="headerFile" value="config/java.header"/>
         <property name="charset" value="UTF-8"/>
     </module>
+    <!-- Custom Audit Listener -->
+    <module name="com.puppycrawl.tools.checkstyle.GitHubAuditListener"/>
     <module name="TreeWalker">
         <!-- Checks for whitespace -->
         <module name="WhitespaceAround"/>
