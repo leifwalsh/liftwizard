@@ -17,7 +17,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}-${{ github.run_id }}
         restore-keys: ${{ runner.os }}-m2
     - name: Run Checkstyle with Maven
       run: mvn -B -V checkstyle:check
