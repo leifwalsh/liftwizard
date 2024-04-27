@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import java.util.List; // Unused import to trigger CheckStyle violation
 import java.util.Map;
 
 import com.example.helloworld.auth.ExampleAuthenticator;
