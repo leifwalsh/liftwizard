@@ -574,10 +574,17 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.3.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>8.41</version>
+                    </dependency>
+                </dependencies>
                 <configuration>
                     <consoleOutput>true</consoleOutput>
                     <configLocation>../checkstyle.xml</configLocation>
-                    <propertyExpansion>listener=com.puppycrawl.tools.checkstyle.GitHubAuditListener</propertyExpansion>
+                    <listener>com.puppycrawl.tools.checkstyle.GitHubAuditListener</listener>
                 </configuration>
                 <executions>
                     <execution>
