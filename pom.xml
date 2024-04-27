@@ -108,7 +108,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <configLocation>/home/ubuntu/liftwizard/liftwizard-maven-build/liftwizard-parent-build/checkstyle-configuration-liftwizard-semantics.xml</configLocation>
+                    <configLocation>liftwizard-maven-build/liftwizard-parent-build/checkstyle-configuration-liftwizard-semantics.xml</configLocation>
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
