@@ -21,4 +21,4 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Run Checkstyle with Maven
       run: mvn -B -V -X checkstyle:check -Dcheckstyle.config.location=google_checks.xml
-      working-directory: .
+      working-directory: ${{ github.workspace }}
