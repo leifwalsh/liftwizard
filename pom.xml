@@ -113,6 +113,8 @@
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
                     <linkXRef>false</linkXRef>
+                    <!-- Explicitly set suppressionsFileExpression to avoid using a non-existent suppressions file -->
+                    <suppressionsFileExpression>${checkstyle.suppressions.file}</suppressionsFileExpression>
                 </configuration>
                 <executions>
                     <execution>
