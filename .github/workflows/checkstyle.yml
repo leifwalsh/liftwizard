@@ -20,5 +20,5 @@ jobs:
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2
     - name: Run Checkstyle with Maven
-      run: mvn -B -V checkstyle:check -Dcheckstyle.config.location=google_checks.xml
+      run: mvn -B -V checkstyle:check -Dcheckstyle.config.location=/home/runner/work/liftwizard/liftwizard/google_checks.xml
       working-directory: .
