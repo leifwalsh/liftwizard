@@ -18,8 +18,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>io.liftwizard</groupId>
-        <artifactId>liftwizard-bundle</artifactId>
-        <version>2.1.7</version>
+        <artifactId>liftwizard-parent</artifactId>
+        <version>0.16.0</version>
+        <relativePath>../../pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
