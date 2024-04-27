@@ -23,6 +23,14 @@ jobs:
       run: pwd
     - name: List files in the current directory
       run: ls -la
+    - name: Check if google_checks.xml exists
+      run: |
+        if [ -f google_checks.xml ]; then
+          echo "google_checks.xml exists."
+        else
+          echo "google_checks.xml does not exist."
+          exit 1
+        fi
     - name: Run Checkstyle with Maven
       run: mvn -B -V checkstyle:check -Dcheckstyle.config.location=google_checks.xml
       working-directory: ${{ github.workspace }}
