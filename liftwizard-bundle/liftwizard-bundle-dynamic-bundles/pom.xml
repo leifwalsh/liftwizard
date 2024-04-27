@@ -64,7 +64,6 @@
                         <phase>validate</phase>
                         <configuration>
                             <configLocation>${project.parent.basedir}/liftwizard-maven-build/liftwizard-parent-build/checkstyle-configuration-liftwizard-semantics.xml</configLocation>
-                            <suppressionsLocation>${project.parent.basedir}/liftwizard-maven-build/liftwizard-parent-build/checkstyle-suppressions-liftwizard.xml</suppressionsLocation>
                             <encoding>UTF-8</encoding>
                             <consoleOutput>true</consoleOutput>
                             <failsOnError>true</failsOnError>
