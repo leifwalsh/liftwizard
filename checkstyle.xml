@@ -4,6 +4,45 @@
           "https://checkstyle.org/dtds/configuration_1_3.dtd">
 <module name="Checker">
     <module name="TreeWalker">
+        <!-- Checks for whitespace -->
+        <module name="WhitespaceAround"/>
+        <module name="WhitespaceAfter"/>
+        <module name="NoWhitespaceBefore"/>
+        <module name="NoWhitespaceAfter"/>
+        <module name="OperatorWrap"/>
+        <module name="SeparatorWrap"/>
+        <module name="TypecastParenPad"/>
+        <module name="ParenPad"/>
+        <module name="MethodParamPad"/>
+
+        <!-- Size Violations -->
+        <module name="LineLength">
+            <property name="max" value="80"/>
+        </module>
+
+        <!-- Checks for imports -->
         <module name="UnusedImports"/>
+        <module name="RedundantImport"/>
+        <module name="AvoidStarImport"/>
+
+        <!-- Checks for naming conventions -->
+        <module name="PackageName"/>
+        <module name="TypeName"/>
+        <module name="ConstantName"/>
+        <module name="LocalFinalVariableName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="MethodName"/>
+        <module name="ParameterName"/>
+
+        <!-- Checks for headers -->
+        <module name="RegexpHeader">
+            <property name="headerFile" value="config/java.header"/>
+        </module>
+
+        <!-- Miscellaneous other checks -->
+        <module name="ArrayTypeStyle"/>
+        <module name="TodoComment"/>
+        <module name="UpperEll"/>
     </module>
 </module>
