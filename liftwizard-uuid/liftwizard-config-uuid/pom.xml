@@ -28,6 +28,11 @@
 
     <name>Liftwizard Config Factory: UUID</name>
 
+    <properties>
+        <jackson.version>2.12.3</jackson.version>
+        <auto-service.version>1.0-rc7</auto-service.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
