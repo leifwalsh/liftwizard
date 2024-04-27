@@ -32,21 +32,29 @@
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
+            <!-- It is assumed that the version should be aligned with the project's Dropwizard version -->
+            <version>${dropwizard.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-configuration</artifactId>
+            <!-- It is assumed that the version should be aligned with the project's Dropwizard version -->
+            <version>${dropwizard.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
+            <!-- Version added as per the Maven Central latest -->
+            <version>1.9</version>
         </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+            <!-- Version added as per the Maven Central latest -->
+            <version>1.7.30</version>
         </dependency>
 
     </dependencies>
